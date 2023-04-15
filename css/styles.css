@@ -435,11 +435,15 @@ body {
 
     border: 1px solid #8E8F99;
     border-radius: 4px;
+    color: #8E8F99;
 }
 .client-icon {
     width: 104px;
     height: 56px;
+    fill: currentColor;
 }
+
+
 /*        /Cliant icons       */
 
 /*         /TEAM              */
