@@ -68,11 +68,22 @@ h1,h2,h3,h4,h5,h6,p{
 .social-link:focus {
     background-color: #404BBF;
 }
+
+.media-link:hover,
+.media-link:focus {
+    background-color: #31D0AA;
+}
+
 .client-link:hover,
 .client-link:focus {
     border-color: #404BBF;
     color: #404BBF;
 }
+
+/* .gallery-link:hover,
+.gallery-link:focus {
+    color: linear-gradient(to bottom, rgba(77,90,229),  rgba(77,90,229))
+} */
 /*hover end*/
 
 .button{
@@ -381,7 +392,6 @@ body {
 
 .team-icons {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     gap: 24px;
 }
@@ -436,7 +446,7 @@ body {
 
 /*         CUSTOMERS          */
 .customers {
-    padding: 120px 156px;
+    padding: 120px 0;
 }
 
 .customers-title {
@@ -474,9 +484,53 @@ body {
     padding-bottom: 100px;
 }
 
+.media-title {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    padding-bottom: 16px;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.studio-container {
+    margin-right: 120px;
+}
+
 .footer-studio {
     color: #f4f4fd;
 }
+
+.media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 40px;
+    height: 40px;
+    background-color: var(--logo-web-color);
+    border-radius: 50%;
+}
+
+.media-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 208px;
+    height: 80px; 
+}
+
 /*         /FOOTER             */
 
 
