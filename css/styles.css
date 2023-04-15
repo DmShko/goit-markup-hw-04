@@ -62,6 +62,7 @@ h1,h2,h3,h4,h5,h6,p{
 .topic-button:focus {
     color: #FFFFFF;
     border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .social-link:hover,
@@ -80,6 +81,10 @@ h1,h2,h3,h4,h5,h6,p{
     color: #404BBF;
 }
 
+.gallery-link:hover,
+.gallery-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 /* .gallery-link:hover,
 .gallery-link:focus {
     color: linear-gradient(to bottom, rgba(77,90,229),  rgba(77,90,229))
@@ -101,7 +106,11 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .section{
-    width: 1440px;
+    max-width: 1440px;
+    /* autocheck */
+    /* my version 'width: 1440px;' 
+    - section not cuting! */
+
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 120px;
@@ -233,7 +242,7 @@ body {
 
 .hero {
     background-color: #2E2F42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),  rgba(46, 47, 66, 0.7)), url("../images/people-office 1.jpg");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),  rgba(46, 47, 66, 0.7)), url(../images/people-office1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -281,6 +290,7 @@ body {
     display: flex;
     background-color: #F4F4FD;
     width: 264px;
+    align-items: center;
     justify-content: center;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -504,15 +514,13 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
 
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .footer-container {
     display: flex;
-}
-
-.studio-container {
-    margin-right: 120px;
+    align-items: baseline;
+    gap: 120px; 
 }
 
 .footer-studio {
@@ -533,7 +541,7 @@ body {
 .media-icons {
     display: flex;
     justify-content: space-between;
-    gap: 24px;
+    gap: 16px;
 }
 
 .media-container {
