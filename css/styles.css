@@ -106,16 +106,12 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .section{
-    max-width: 1440px;
+    /* max-width: 1440px; */
     /* autocheck */
     /* my version 'width: 1440px;' 
     - section not cuting! */
-
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 120px;
-    /* padding-top: 120px;
-    padding-bottom: 120px; */
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 /**
@@ -237,10 +233,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 316px;
+    /* padding: 0 316px; */
 }
 
 .hero {
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),  rgba(46, 47, 66, 0.7)), url(../images/people-office1.jpg);
     background-repeat: no-repeat;
@@ -330,9 +328,9 @@ body {
 
 /*          EXAMPLE          */
 
-/* .example{
-    padding-bottom: 120px;
-} */
+.example{
+    padding-top: 0;
+}
 
 .example-title,
 .team-title {
@@ -499,7 +497,7 @@ body {
 }
 
 .page-footer {
-    width: 1440px;
+    /* width: 1440px; */
     margin-left: auto;
     margin-right: auto;
     background-color:var(--basic-color);
